@@ -29,6 +29,14 @@ Update: The paper has been accepted for publication in IPDPS 2022.
 
 ### Bibtex
 
+```
+@inproceedings{garg2021understanding,
+  title={Understanding the Design-Space of Sparse/Dense Multiphase GNN dataflows on Spatial Accelerators},
+  author={Garg, Raveesh and Qin, Eric and Mu{\~n}oz-Mart{\'\i}nez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abell{\'a}n, Jos{\'e} L and Acacio, Manuel E and Alarc{\'o}n, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},
+  booktitle={2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  year={2021}
+```
+
 ### Codebase
 
 The OMEGA codebase will be released soon at https://github.com/stonne-simulator/omega.
