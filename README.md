@@ -11,7 +11,7 @@ To enable this, we propose a taxonomy that expresses: (1) *Aggregation intra-pha
 
 ## OMEGA Framework
 
-We also demonstrate the OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework that we build on top of [STONNE](README.md) which enables us to model the cost of the pipelined GNN dataflows.
+We also demonstrate the OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework that we build on top of [STONNE](https://stonne-simulator.github.io) which enables us to model the cost of the pipelined GNN dataflows.
 
 It is built around [STONNE simulator](https://stonne-simulator.github.io), [STONNE codebase](https://github.com/stonne-simulator/stonne)
 
