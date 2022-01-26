@@ -1,4 +1,4 @@
-# OMEGA
+# GNN Dataflow Analysis Using OMEGA Framework
 
 <img src="computations.png">
 
