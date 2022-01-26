@@ -1,6 +1,6 @@
 # OMEGA
 
-<img src="figures/computations.png">
+<img src="computations.png">
 
 GNNs are becoming increasingly popular because of their ability to accurately learn representations from graph structured data. GNN inference runtime is dominated by two phases: (1) *Aggregation* which is an SpMM computation with irregular, workload dependent data accesses, and (2) *Combination* computations that can be cast as GEMMs, similar to dense DNNs as shown in the figure above. Prior works on DNN dataflow studies have described the data orchestration and data movement in DNN accelerators. However, these works only model dense computations and model one GEMM or convolution operation at a time. GNNs offer an additional knob of pipelining between the two phases which also leads to interdependence of the two dataflows.
 
@@ -17,7 +17,7 @@ It is built around [STONNE simulator](https://stonne-simulator.github.io), [STON
 
 It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](https://dl.acm.org/doi/pdf/10.1145/3173162.3173176) and feeds the statistics to an inter-phase cost model that returns the metrics of a pipelined inter-phase dataflow as shown in Figure below.
 
-<img src="figures/omega.png">
+<img src="omega.png">
 
 ## Resources
 
