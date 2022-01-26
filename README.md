@@ -11,12 +11,28 @@ To enable this, we propose a taxonomy that expresses: (1) *Aggregation intra-pha
 
 ## OMEGA Framework
 
-We also demonstrate the OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework that we build on top of [STONNE](README.md) which enables us to model the cost of the pipelined GNN dataflows. It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](https://dl.acm.org/doi/pdf/10.1145/3173162.3173176) and feeds the statistics to an inter-phase cost model that returns the metrics of a pipelined inter-phase dataflow as shown in Figure below.
+We also demonstrate the OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework that we build on top of [STONNE](README.md) which enables us to model the cost of the pipelined GNN dataflows.
+
+It is built around [STONNE simulator](https://stonne-simulator.github.io), [STONNE codebase](https://github.com/stonne-simulator/stonne)
+
+It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](https://dl.acm.org/doi/pdf/10.1145/3173162.3173176) and feeds the statistics to an inter-phase cost model that returns the metrics of a pipelined inter-phase dataflow as shown in Figure below.
 
 <img src="figures/omega.png">
 
+## Resources
+
+### Publication
+
 For more details, please refer to our [pre-print](https://arxiv.org/pdf/2103.07977).
 
-The OMEGA codebase will be released soon at https://github.com/stonne-simulator/omega
+Update: The paper has been accepted for publication in IPDPS 2022.
 
-Update: The paper has been accepted for publication in IPDPS 2022
+### Bibtex
+
+### Codebase
+
+The OMEGA codebase will be released soon at https://github.com/stonne-simulator/omega.
+
+### Tutorial
+
+We are organizing a tutorial ASPLOS 2022 Tutorial for STONNE and OMEGA [STONNE+OMEGA Tutorial](https://stonne-simulator.github.io/ASPLOSTUT.html)
