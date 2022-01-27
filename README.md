@@ -43,4 +43,4 @@ The OMEGA codebase will be released soon at https://github.com/stonne-simulator/
 
 ### Tutorial
 
-We are organizing a tutorial ASPLOS 2022 Tutorial for STONNE and OMEGA [STONNE+OMEGA Tutorial](https://stonne-simulator.github.io/ASPLOSTUT.html)
+We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
