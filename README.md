@@ -1,3 +1,8 @@
+
+# Tutorial
+
+We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
+
 # Codebase
 
 For current stable version of codebase, please refer to the docker image used in the tutorial.
@@ -5,10 +10,6 @@ For current stable version of codebase, please refer to the docker image used in
 ```
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
 ```
-
-# Tutorial
-
-We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
 
 # GNN Dataflow Analysis Using OMEGA Framework
 
