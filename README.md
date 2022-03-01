@@ -1,3 +1,15 @@
+# Codebase
+
+For current stable version of codebase, please refer to the docker image used in the tutorial.
+
+```
+docker run -it franciscomunoz/stonne_omega_img /bin/bash
+```
+
+# Tutorial
+
+We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
+
 # GNN Dataflow Analysis Using OMEGA Framework
 
 <img src="computations.png">
@@ -36,11 +48,3 @@ Update: The paper has been accepted for publication in IPDPS 2022.
   booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
   year={2022}
 ```
-
-### Codebase
-
-The OMEGA codebase will be released soon at https://github.com/stonne-simulator/omega.
-
-### Tutorial
-
-We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
