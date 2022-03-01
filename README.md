@@ -5,7 +5,7 @@ We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STON
 
 # Codebase
 
-For current stable version of codebase, please refer to the docker image used in the tutorial.
+For stable version of codebase, please refer to the docker image used in the tutorial.
 
 ```
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
