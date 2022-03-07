@@ -1,0 +1,1 @@
+Añadir a los multiplicadores que hacen el forwarding de la psum la funcionalidad para que el mismo genere un cero. Para ello debemos de pasarle el numero de ciclos que tiene que esperar hasta generar la psum 

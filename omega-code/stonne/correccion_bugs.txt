@@ -1,0 +1,26 @@
+Dia sabado 16/11/2019- Corregido el problema de sustitucion de nuevos pesos por antiguos sin haber terminado la anterior iteracion. Solucion: en el fichero SDMemory a la hora de enviar los datos de entrada (iacts y weights) distinguir entre iteraciones. Si el paquete a enviar pertenece a una iteracion superior (nuevo canal), el paquete no sera enviado. Esto lo que hace basicamente es secuenciar los output channels. Dos mismos output channels no estaran a partir de ahora en el pipeline de la aruitectura. Para enviar los datos de entrada de un ochannel subsecuente, todas las output psums del canal anterior deben haber sido calculados.
+
+Dia sabado 16/11/2019- Corregido fallo al usar T_K>1. El fallo erra que a la hora de enviar los pesos se usaba current_K para acceder a memoria en lugar de unsigned index_K=current_K*this->current_tile->get_T_K(); para saltarnos los T_K anteriores y no solo current_K. 
+
+Dia domingo 17/11/2019 - Corregido fallo al usar T_C>1. El fallo era el direccionamiento de T_C y ya de paso se ha solucionado un posible bug con T_R y T_S cambiando tambien la forma de direccionar al acceder a memoria. Ahora, accedemos a todas las variables al igual que con el bug anterior: index_C=current_C*this->current_tile->get_T_C(); index_R=current_R*this->current_tile-get_T_R() y index_S=current_S*this->current_tile->get_T_S(). Se han hecho estas modificaciones en las 3 veces que se accede a memoria. En los pesos (opcion multicast y unicast) y a la hora de acceder a los inputs.
+
+Como anadir un nuevo parametro de salida: 
+    1. Modificar Stats.h para añadir el parametro en la clase correspondiente
+    2. Modificar Stats.cpp para modificar la funcion reset que resetea el parametro a cero
+    3. Modificar el codigo correspondiente para que se use ese parametro en el fichero adecuado.
+    4. Modificar Stats.cpp en la clase correspondiente en la funcion printStats para que lo muestre
+
+Dia 11/11/2019 - Corregido el fallo al usar numero de multiplicadores 64 con T_R=3, T_S=3, T_C=3, T_K=2. EEl problema era que el algoritmo de generacion de señales no funcionaba correctamente. Esto es asi, porque en el paper de MAERI original, el algoritmo de generacion de señales es explicado utilizando un unico vector para cada nodo activo del ART. Sin embargo, si utilizamos solo un vector, y guardamos los resultados del nivel siguiente en el mismo vector, estamos machacando informacion del nivel actual, y no funciona correctamente. Lo mejor, y creo que mas correcto, es utilizar dos vectores de bits. Uno almacena los nodos activos en ese nivel, y el otro guarda los nodos que se van activando para el siguiente nivel. 
+Esta solucion tambien proporciona una gran ayuda a la hora de decidir que nodos del ART van a escribir en memoria, y se ha implementado tambien. Basicamente, cuando en el vector de bits, solo queda un unico 1, quiere decir que toda la suma de esa VN se ha reducido completamente, y por tanto que ese nodo es el que debe enviar a memoria. 
+
+Dia 16/12/2019 - Por alguna extrañisima razon que desconozco, y dudo mucho que incluso el mismisimo Dios pueda conocer jamas en toda su infinita existencia, el simulador no funcionaba en los casos con C PRIMO (WHAAAAAAAAAAAAAAT THE FUUUUUUCK!!!). Esto es debido a que por alguna razon mas extraña todavia, que jamas conocere, en la cola de MSwitches de pesos no se eliminaban correctamente en los flushes. La solucion ha sido en la clase MSwitch se usaba el siguiente bucle para eliminar los paquetes:
+ for(int i=0; i<weight_fifo->size(); i++) {
+         DataPackage* pck_in_fifo = weight_fifo->pop(); //this operation is done i times
+                delete pck_in_fifo; //Deleting pck
+ }
+La solucion ha sido cambiarlo a un while. Con esto ya los paquetes se eliminan correctamente. Esto tiene sentido. Sin embargo, por que ocurria esto unicamente con valores de C numeros primos? Quien sabe. La vida es un misterio, y este simulador lo es aun mas.
+
+
+Dia 17/12/2019: Se ha implementado grupos y por el momento no presenta ningun fallo. Se ha implementado la rutina smart_tests para testearla. Ademas, se ha solucionado el fallo con groups y k a la hora de controlar el flujo (no enviar iteraciones de k superaiores mientras las g o k anteriores están en proceso). Para ello, se ha llegado a la conclusion sobre que poner en las funciones setIterationK
+
+Dia 18/12/2019: Stride se ha implementado correctamente, y parece que funciona

@@ -1,0 +1,4 @@
+Ahora creo que el algoritmo generacion de senales no puede ser ya que me falla al variar C pero no al variar 
+el tile y por tanto el arbol.
+
+Bueno no, esto de arriba es una mierda. En realidad VN vale uno mas para procesar el folding y eso es lo que modifica los arboles de la ART y por tanto probableemente el algoritmo de generacion de señales esta bugeado.

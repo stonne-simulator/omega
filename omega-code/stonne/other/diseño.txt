@@ -1,0 +1,2 @@
+En MSwitch existen dos funciones: setInputForwardingConnection y setOutputForwardingConnection. Estas dos funciones activan y desactivan los fw links para recibir y enviar informacion a través
+de su fw link. Estas funciones deben de ser llamadas por tile.cpp al mismo timepo que se configura la VN en cada MS.

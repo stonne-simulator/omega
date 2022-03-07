@@ -1,0 +1,33 @@
+El switch con lvel 5 y num 21 esta recibiendo datos del fw link pero no esta recibiendo de los padres. Eso hace que en el cycle 
+el switch no haga pop() de nuevo valor que le ha entrado del fw link ya que no hay nada en los padres.
+Esta recibiendo del switch 22 que esta comprobado de estar configurado con el fw link y como SEND y con configuracion 2:1
+
+Comprobado que el orden de ejecucion de los switchws 21 y 22 es correcto...
+
+El problema esque el switch 22 (que solo tiene un child left) no deja de recibir datos de entrada incluso a pesar de que hay una parada de por edio debido a la distribucion de pesos. Para ello creo que el problema es en mirar a los switches 44 y 45 (solo el unico hijo 44) que nunca para, del siguiente nivel).
+
+OUTPUT SIZE EACH CYCLE: 1
+input_psum_right size 44 SWITCHHHHH 1
+input_psum_left size 44 SWITCHHHHH 0
+input_psum_right size in receive childs is 1
+Fw link received data
+fw_link_input_fifo size is 1
+input_psum_left_size: 1
+input_psum_right_size: 1
+Pop Done
+Cycle
+OUTPUT SIZE EACH CYCLE: 1
+input_psum_right size 44 SWITCHHHHH 0
+input_psum_left size 44 SWITCHHHHH 1
+input_psum_right size in receive childs is 1
+Fw link received data
+fw_link_input_fifo size is 1
+input_psum_left_size: 1
+input_psum_right_size: 1
+
+El switch (5,21 no recibe datos a traves del fw link). Esto se debe a que el switch (5,22) no reccibe datos de su link derecho.
+Esto se debe a que el switch (6,45) (el switch derecho) esta desactivado. El problema es que el switch (5,22) lo tiene activado 
+cuando no deberia de ser asi. Fallo en el algoritmo de activar los links? 
+
+- Tener en cuenta que los FW Links pueden tener que sincronizarse tambien y que no envien de un bando tan pronto reciben informacion
+- Reducir el tiempo de ejecucion del DS que se debe al recorrido del array de booleanos en el multicast

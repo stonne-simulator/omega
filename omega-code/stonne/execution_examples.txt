@@ -1,0 +1,7 @@
+./stonne -R=3 -S=3 -C=4 -K=8 -N=1 -G=1 -X=9 -Y=9 -T_R=1 -T_S=1 -T_C=4 -T_K=1 -T_N=1 -T_G=1 -T_X_=1 -T_Y_=1 -num_ms=128  -dn_bw=128 -rn_bw=128
+
+./stonne -R=3 -S=3 -C=128 -K=8 -N=1 -G=1 -X=9 -Y=9 -T_R=1 -T_S=1 -T_C=64 -T_K=2 -T_N=1 -T_G=1 -T_X_=1 -T_Y_=1 -num_ms=128  -dn_bw=128 -rn_bw=128
+
+
+Alexnet test not working: ./stonne  -R=3 -S=3 -C=256 -K=384 -G=1 -N=1 -X=14 -Y=14 -T_R=3 -T_S=3 -T_C=1 -T_K=6 -T_G=1 -T_N=1 -T_X_=1 -T_Y_=1 -num_ms=64 -dn_bw=64 -rn_bw=64
+

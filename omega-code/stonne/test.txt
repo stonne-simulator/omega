@@ -1,0 +1,5 @@
+./stonne -R=3 -S=3 -C=4 -K=8 -N=1 -G=1 -X=9 -Y=9 -T_R=1 -T_S=1 -T_C=4 -T_K=1 -T_N=1 -T_G=1 -T_X_=1 -T_Y_=1 -num_ms=128  -dn_bw=128 -rn_bw=128
+
+./stonne -R=3 -S=3 -C=4 -K=8 -N=1 -G=1 -X=9 -Y=9 -T_R=1 -T_S=1 -T_C=4 -T_K=1 -T_N=1 -T_G=1 -T_X_=1 -T_Y_=1 -num_ms=128  -dn_bw=128 -rn_bw=128 -rn_type="FENETWORK" 
+
+./stonne -R=1 -S=4 -C=1 -K=2 -G=1 -N=4 -X=1 -Y=4 -T_R=1 -T_S=4 -T_C=1 -T_K=1 -T_G=1 -T_N=1 -T_X_=1 -T_Y_=1 -num_ms=16 -dn_bw=16 -rn_bw=16
