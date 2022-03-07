@@ -12,7 +12,7 @@ For a stable version of codebase, please refer to the docker image used in the t
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
 ```
 
-Codebase is in the omega-code folder
+Codebase is in the omega-code folder of the master branch
 
 # Documentation
 
