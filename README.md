@@ -12,7 +12,7 @@ For the most stable codebase, please refer to the docker image used in the tutor
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
 ```
 
-Most stable version is "master"
+Most stable version of this codebase will always be "master"
 
 # Documentation
 
