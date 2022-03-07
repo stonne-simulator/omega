@@ -21,16 +21,16 @@ OMEGA takes the following inputs
 <ul>
 <li>Dimensions
 
-  -V, -F, -G, -E (Edges, required for parsing)
+  *-V, -F, -G, -E (Edges, required for parsing)*
 <li>Tile sizes for both phases
 
-  -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc
+ * -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc*
 <li>Hardware Parameters
 
-  -Pe_agg, -Pe_cmb, -dn_bw_agg, -dn_bw_cmb, -rn_bw_agg, -rn_bw_cmb
+  *-Pe_agg, -Pe_cmb, -dn_bw_agg, -dn_bw_cmb, -rn_bw_agg, -rn_bw_cmb*
 <li>Path to Input files for the adjacency matrix (CSR representation). Refer to sample_graphs directory
 
-  -vertex_path, edge_path
+  *-vertex_path, edge_path*
 </ul> 
 
 # GNN Dataflow Analysis Using OMEGA Framework
