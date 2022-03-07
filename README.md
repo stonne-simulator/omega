@@ -13,7 +13,7 @@ docker run -it franciscomunoz/stonne_omega_img /bin/bash
 
 # Codebase - Master Branch
 
-For the most stable codebase, please refer to the docker image used in the tutorial.
+For the most stable and most convenient to install codebase, please refer to the docker image used in the tutorial.
 
 Most stable version of this github repo will always be "master"
 
