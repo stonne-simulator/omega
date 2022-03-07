@@ -1,7 +1,7 @@
 
-# Tutorial
+# Tutorial and Docker Image
 
-We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
+OMEGA was presented at ASPLOS 2022 Tutorial ([STONNE+OMEGA])(https://stonne-simulator.github.io/ASPLOSTUT.html)
 
 ## Docker Image
 
