@@ -1,4 +1,23 @@
 
+# Resources
+
+## Publication
+
+For more details, please refer to our [pre-print](https://arxiv.org/pdf/2103.07977).
+
+Update: The paper has been accepted for publication in IPDPS 2022.
+
+## Bibtex
+
+```
+@inproceedings{garg2021understanding,
+  title={Understanding the Design-Space of Sparse/Dense Multiphase GNN dataflows on Spatial Accelerators},
+  author={Garg, Raveesh and Qin, Eric and Mu{\~n}oz-Mart{\'\i}nez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abell{\'a}n, Jos{\'e} L and Acacio, Manuel E and Alarc{\'o}n, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},
+  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  year={2022}
+```
+
+
 # Tutorial and Docker Image
 
 OMEGA was presented at ASPLOS 2022 [STONNE+OMEGA Tutorial](https://stonne-simulator.github.io/ASPLOSTUT.html)
@@ -37,24 +56,6 @@ It is built around [STONNE simulator](https://stonne-simulator.github.io), [STON
 It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](https://dl.acm.org/doi/pdf/10.1145/3173162.3173176) and feeds the statistics to an inter-phase cost model that returns the metrics of a pipelined inter-phase dataflow as shown in Figure below.
 
 <img src="omega.png">
-
-# Resources
-
-## Publication
-
-For more details, please refer to our [pre-print](https://arxiv.org/pdf/2103.07977).
-
-Update: The paper has been accepted for publication in IPDPS 2022.
-
-## Bibtex
-
-```
-@inproceedings{garg2021understanding,
-  title={Understanding the Design-Space of Sparse/Dense Multiphase GNN dataflows on Spatial Accelerators},
-  author={Garg, Raveesh and Qin, Eric and Mu{\~n}oz-Mart{\'\i}nez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abell{\'a}n, Jos{\'e} L and Acacio, Manuel E and Alarc{\'o}n, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},
-  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
-  year={2022}
-```
 
 # Dependencies
 
