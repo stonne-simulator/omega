@@ -28,9 +28,6 @@ OMEGA takes the following inputs
 <li>Path to Input files for the adjacency matrix (CSR representation)
 -vertex_path, edge_path
 </ul> 
-  
-<img width="603" alt="image" src="https://user-images.githubusercontent.com/64796325/156953286-0831a2e0-da9a-44b5-8010-aa2e4c529cd4.png">
-
 
 # GNN Dataflow Analysis Using OMEGA Framework
 
