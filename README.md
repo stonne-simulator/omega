@@ -62,6 +62,12 @@ Please refer to the C++ and python requirements in the [STONNE codebase](https:/
 
 # Documentation
 
+```
+omega-code (Directory which has the Makefile and the example scripts)
+    |____stonne (Directory with stonne codebase and modifications for OMEGA)
+            |______ src (Contains stonne cpp files and modifications for OMEGA)
+                      |________omega.cpp (Contains the wrapper and calls the stonne instances)
+```
 Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel simulation. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows.
 
 OMEGA takes the following inputs
