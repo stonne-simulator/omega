@@ -38,15 +38,15 @@ It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](htt
 
 <img src="omega.png">
 
-## Resources
+# Resources
 
-### Publication
+## Publication
 
 For more details, please refer to our [pre-print](https://arxiv.org/pdf/2103.07977).
 
 Update: The paper has been accepted for publication in IPDPS 2022.
 
-### Bibtex
+## Bibtex
 
 ```
 @inproceedings{garg2021understanding,
