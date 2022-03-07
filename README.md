@@ -27,7 +27,7 @@ OMEGA takes the following inputs
   -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc
 <li>Hardware Parameters
 
-  -Pe_agg, -Pe_cmb, -dn_bw_agg, -dn_bw_cmb, -rn_bw_agg, -rn_bw,cmb
+  -Pe_agg, -Pe_cmb, -dn_bw_agg, -dn_bw_cmb, -rn_bw_agg, -rn_bw_cmb
 <li>Path to Input files for the adjacency matrix (CSR representation). Refer to sample_graphs directory
 
   -vertex_path, edge_path
