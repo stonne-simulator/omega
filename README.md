@@ -3,7 +3,7 @@
 
 We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
 
-# Docker Image
+## Docker Image
 
 We have created a docker image for OMEGA for the purpose of ASPLOS tutorial! This is the most stable version. Everything is installed in the image so using the simulator is much easier. Just type the next docker command to download and run the image:
 
