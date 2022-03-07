@@ -3,14 +3,15 @@
 
 We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
 
-# Codebase - Master Branch
-
-
-For the most stable codebase, please refer to the docker image used in the tutorial.
+# Docker Image
 
 ```
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
 ```
+
+# Codebase - Master Branch
+
+For the most stable codebase, please refer to the docker image used in the tutorial.
 
 Most stable version of this codebase will always be "master"
 
