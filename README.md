@@ -21,7 +21,7 @@ OMEGA takes the following inputs
 <ul>
 <li>Dimensions
 
-  *-V, -F, -G, -E (Edges, required for parsing)*
+  *-V, -F, -G, -E* (Edges, required for parsing)
 <li>Tile sizes for both phases
 
  * -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc*
