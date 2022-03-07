@@ -3,6 +3,10 @@
 
 We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
 
+# Dependencies
+
+Please refer to the C++ and python requirements [STONNE codebase](https://github.com/stonne-simulator/stonne)
+
 # Docker Image
 
 We have created a docker image for OMEGA for the purpose of ASPLOS tutorial! This is the most stable version. Everything is installed in the image so using the simulator is much easier. Just type the next docker command to download and run the image:
@@ -16,41 +20,6 @@ docker run -it franciscomunoz/stonne_omega_img /bin/bash
 For the most stable and most convenient to install codebase, please refer to the docker image used in the tutorial.
 
 Most stable version of this github repo will always be "master"
-
-# Documentation
-
-Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel simulation. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows.
-
-OMEGA takes the following inputs
-
-<ul>
-<li>Dimensions
-
-  * -V, -F, -G, -E (Edges, required for parsing)
-<li>Tile sizes for both phases. VF matrix is shared across phases so we use 'a' and 'c' to refer to the phase for which tile size is being specified
-
- * -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc
-<li>Hardware Parameters
-
-  * -Pe_agg, -Pe_cmb, -dn_bw_agg, -dn_bw_cmb, -rn_bw_agg, -rn_bw_cmb
-<li>Path to Input files for the adjacency matrix (CSR representation). Refer to sample_graphs directory
-
-  * -vertex_path, edge_path
-</ul> 
-
-An example command is as follows:
-
-```
-./omega -V=1168 -F=28 -G=2 -E=2590 -T_Va=18 -T_N=1 -T_Fa=28 -T_Vc=18 -T_G=1 -T_Fc=28 -pe_agg=512 -pe_cmb=512 -dn_bw_agg=512 -rn_bw_agg=512 -dn_bw_cmb=512 -rn_bw_cmb=512 -vertex_path="sample_graphs/vertex_mutag_batch64.txt" -edge_path="sample_graphs/edge_mutag_batch64.txt"
-```
-
-For running an example simulation, go to the omega_code directory and first compile.
-
-```
-make all
-
-source example_simulation.sh
-```
 
 # GNN Dataflow Analysis Using OMEGA Framework
 
@@ -89,4 +58,40 @@ Update: The paper has been accepted for publication in IPDPS 2022.
   author={Garg, Raveesh and Qin, Eric and Mu{\~n}oz-Mart{\'\i}nez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abell{\'a}n, Jos{\'e} L and Acacio, Manuel E and Alarc{\'o}n, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},
   booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
   year={2022}
+```
+
+
+# Documentation
+
+Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel simulation. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows.
+
+OMEGA takes the following inputs
+
+<ul>
+<li>Dimensions
+
+  * -V, -F, -G, -E (Edges, required for parsing)
+<li>Tile sizes for both phases. VF matrix is shared across phases so we use 'a' and 'c' to refer to the phase for which tile size is being specified
+
+ * -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc
+<li>Hardware Parameters
+
+  * -Pe_agg, -Pe_cmb, -dn_bw_agg, -dn_bw_cmb, -rn_bw_agg, -rn_bw_cmb
+<li>Path to Input files for the adjacency matrix (CSR representation). Refer to sample_graphs directory
+
+  * -vertex_path, edge_path
+</ul> 
+
+An example command is as follows:
+
+```
+./omega -V=1168 -F=28 -G=2 -E=2590 -T_Va=18 -T_N=1 -T_Fa=28 -T_Vc=18 -T_G=1 -T_Fc=28 -pe_agg=512 -pe_cmb=512 -dn_bw_agg=512 -rn_bw_agg=512 -dn_bw_cmb=512 -rn_bw_cmb=512 -vertex_path="sample_graphs/vertex_mutag_batch64.txt" -edge_path="sample_graphs/edge_mutag_batch64.txt"
+```
+
+For running an example simulation, go to the omega_code directory and first compile.
+
+```
+make all
+
+source example_simulation.sh
 ```
