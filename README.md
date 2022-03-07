@@ -22,7 +22,7 @@ OMEGA takes the following inputs
 <li>Dimensions
 
   * -V, -F, -G, -E (Edges, required for parsing)
-<li>Tile sizes for both phases
+<li>Tile sizes for both phases. VF matrix is shared across phases so we use 'a' and 'c' to refer to the phase for which tile size is being specified
 
  * -T_Va, -T_N, -T_Fa, -T_Vc, -T_G, -T_Fc
 <li>Hardware Parameters
