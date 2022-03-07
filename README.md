@@ -90,6 +90,8 @@ An example command is as follows:
 For running an example simulation, go to the omega_code directory and first compile.
 
 ```
+cd omega-code
+
 make all
 
 source example_simulation.sh
