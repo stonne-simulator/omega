@@ -3,10 +3,6 @@
 
 We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STONNE+OMEGA Tutorial])(https://stonne-simulator.github.io/ASPLOSTUT.html)
 
-# Dependencies
-
-Please refer to the C++ and python requirements in the [STONNE codebase](https://github.com/stonne-simulator/stonne)
-
 # Docker Image
 
 We have created a docker image for OMEGA for the purpose of ASPLOS tutorial! This is the most stable version. Everything is installed in the image so using the simulator is much easier. Just type the next docker command to download and run the image:
@@ -60,6 +56,9 @@ Update: The paper has been accepted for publication in IPDPS 2022.
   year={2022}
 ```
 
+# Dependencies
+
+Please refer to the C++ and python requirements in the [STONNE codebase](https://github.com/stonne-simulator/stonne)
 
 # Documentation
 
