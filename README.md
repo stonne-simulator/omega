@@ -12,6 +12,8 @@ For a stable version of codebase, please refer to the docker image used in the t
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
 ```
 
+Codebase is in the omega-code folder
+
 # Documentation
 
 Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel simulation. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows.
