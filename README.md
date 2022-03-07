@@ -14,7 +14,7 @@ docker run -it franciscomunoz/stonne_omega_img /bin/bash
 
 # Documentation
 
-Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel simulation. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows. 
+Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel simulation. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows.
 
 OMEGA takes the following inputs
 
@@ -38,6 +38,15 @@ An example command is as follows:
 ```
 ./omega -V=1168 -F=28 -G=2 -E=2590 -T_Va=18 -T_N=1 -T_Fa=28 -T_Vc=18 -T_G=1 -T_Fc=28 -pe_agg=512 -pe_cmb=512 -dn_bw_agg=512 -rn_bw_agg=512 -dn_bw_cmb=512 -rn_bw_cmb=512 -vertex_path="sample_graphs/vertex_mutag_batch64.txt" -edge_path="sample_graphs/edge_mutag_batch64.txt"
 ```
+
+For running an example simulation, go to the omega_code directory and first compile.
+
+```
+make all
+
+source example_simulation.sh
+```
+
 
 # GNN Dataflow Analysis Using OMEGA Framework
 
