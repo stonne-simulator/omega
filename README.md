@@ -47,7 +47,6 @@ make all
 source example_simulation.sh
 ```
 
-
 # GNN Dataflow Analysis Using OMEGA Framework
 
 <img src="computations.png">
