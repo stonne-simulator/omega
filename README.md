@@ -8,7 +8,7 @@ For more details, please refer to our [pre-print](https://arxiv.org/pdf/2103.079
 Update: The paper has been accepted for publication in IPDPS 2022.
 
 ## Bibtex
-If you use OMEGA or the GNN dataflow taxonomy in your reseach, please cite-
+If you use OMEGA and/or our GNN dataflow taxonomy in your reseach, please cite-
 ```
 @inproceedings{garg2021understanding,
   title={Understanding the Design-Space of Sparse/Dense Multiphase GNN dataflows on Spatial Accelerators},
