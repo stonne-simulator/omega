@@ -5,7 +5,7 @@ We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STON
 
 # Dependencies
 
-Please refer to the C++ and python requirements [STONNE codebase](https://github.com/stonne-simulator/stonne)
+Please refer to the C++ and python requirements in the [STONNE codebase](https://github.com/stonne-simulator/stonne)
 
 # Docker Image
 
