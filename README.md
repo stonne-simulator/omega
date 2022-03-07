@@ -6,13 +6,13 @@ We are organizing a tutorial at ASPLOS 2022 Tutorial for STONNE and OMEGA ([STON
 # Codebase - Master Branch
 
 
-For a stable version of codebase, please refer to the docker image used in the tutorial.
+For the most stable codebase, please refer to the docker image used in the tutorial.
 
 ```
 docker run -it franciscomunoz/stonne_omega_img /bin/bash
 ```
 
-Codebase is in the omega-code folder of the master branch
+Most stable version is "master"
 
 # Documentation
 
