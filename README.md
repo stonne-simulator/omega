@@ -1,4 +1,4 @@
-<img src="OMEGA LOGO.png">
+<img src="OMEGA LOGO.jpg">
 
 #    OMEGA (*O*bserving *M*apping *E*fficiency over *G*NN *A*ccelerator)
 
