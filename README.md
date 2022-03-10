@@ -1,6 +1,4 @@
 
-<img src="OMEGA LOGO.png" width=500>
-
 OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework is the cost model for inter-phase Graph Neural Network (GNN) dataflows.
 
 # GNN Dataflow Analysis Using OMEGA Framework
