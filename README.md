@@ -1,4 +1,8 @@
 
+<img src="OMEGA LOGO.png">
+
+OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework is the cost model for inter-phase Graph Neural Network (GNN) dataflows.
+
 # GNN Dataflow Analysis Using OMEGA Framework
 
 <img src="computations.png">
@@ -12,9 +16,7 @@ To enable this, we propose a taxonomy that expresses: (1) *Aggregation intra-pha
 
 ## OMEGA Framework
 
-We also demonstrate the OMEGA (**O**bserving **M**apping **E**fficiency over **G**NN **A**ccelerator) framework that we build on top of [STONNE](https://stonne-simulator.github.io) which enables us to model the cost of the pipelined GNN dataflows.
-
-It is built around [STONNE simulator](https://stonne-simulator.github.io), [STONNE codebase](https://github.com/stonne-simulator/stonne)
+OMEGA is built around [STONNE simulator](https://stonne-simulator.github.io), [STONNE codebase](https://github.com/stonne-simulator/stonne)
 
 It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](https://dl.acm.org/doi/pdf/10.1145/3173162.3173176) and feeds the statistics to an inter-phase cost model that returns the metrics of a pipelined inter-phase dataflow as shown in Figure below.
 
