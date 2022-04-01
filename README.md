@@ -73,7 +73,7 @@ omega-code (Directory which has the Makefile and the example scripts)
             |--> src (Contains stonne cpp files and modifications for OMEGA)
                   |-->omega.cpp (Wrapper that calls the stonne instances)
 ```
-Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies an analytical equations on these statistics to return the statistics for Inter-phase dataflows.
+Please refer to the [STONNE simulator](https://github.com/stonne-simulator/stonne) for details on simulation of an individual kernel. OMEGA is a wrapper around the STONNE simulator that instanciates SpMM and GEMM simulation, takes the individual kernel statistics and applies analytical equations on these statistics to return the statistics for Inter-phase dataflows.
 
 OMEGA takes the following inputs
 
