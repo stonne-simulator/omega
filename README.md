@@ -39,6 +39,7 @@ If you use OMEGA and/or our GNN dataflow taxonomy in your reseach, please cite-
   author={Garg, Raveesh and Qin, Eric and Mu{\~n}oz-Mart{\'\i}nez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abell{\'a}n, Jos{\'e} L and Acacio, Manuel E and Alarc{\'o}n, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},
   booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
   year={2022}
+  }
 ```
 
 
