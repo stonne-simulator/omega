@@ -34,12 +34,7 @@ Update: The paper is published in IPDPS 2022 and was nominated for the best pape
 ## Bibtex
 If you use OMEGA and/or our GNN dataflow taxonomy in your reseach, please cite-
 ```
-@inproceedings{garg2021understanding,
-  title={Understanding the Design-Space of Sparse/Dense Multiphase GNN dataflows on Spatial Accelerators},
-  author={Garg, Raveesh and Qin, Eric and Mu{\~n}oz-Mart{\'\i}nez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abell{\'a}n, Jos{\'e} L and Acacio, Manuel E and Alarc{\'o}n, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},
-  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
-  year={2022}
-  }
+@INPROCEEDINGS{garg2022understanding,  author={Garg, Raveesh and Qin, Eric and Muñoz-Matrínez, Francisco and Guirado, Robert and Jain, Akshay and Abadal, Sergi and Abellán, José L. and Acacio, Manuel E. and Alarcón, Eduard and Rajamanickam, Sivasankaran and Krishna, Tushar},  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},   title={Understanding the Design-Space of Sparse/Dense Multiphase GNN dataflows on Spatial Accelerators},   year={2022},  volume={},  number={},  pages={571-582},  doi={10.1109/IPDPS53621.2022.00062}}
 ```
 
 
