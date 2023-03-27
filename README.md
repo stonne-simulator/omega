@@ -46,16 +46,19 @@ doi={10.1109/IPDPS53621.2022.00062}}
 ```
 
 
-# Tutorial and Docker Image
+# Tutorials
 
-OMEGA was presented at ASPLOS 2022 [STONNE+OMEGA Tutorial](https://stonne-simulator.github.io/ASPLOSTUT.html)
+## ASPLOS 2023
+
+OMEGA was presented at ASPLOS 2023 [STONNE+OMEGA Tutorial](https://stonne-simulator.github.io/ASPLOSTUT.html). It was also presented in ASPLOS 2022 tutorial in past.
 
 ## Docker Image
 
 We have created a docker image for OMEGA for the purpose of ASPLOS tutorial! This is the most stable version. Everything is installed in the image so using the simulator is much easier. Just type the next docker command to download and run the image:
 
 ```
-docker run -it franciscomunoz/stonne_omega_img /bin/bash
+docker run -it stonnesimulator/stonne-simulators
+cd OMEGA/omega-code
 ```
 
 # Codebase - Master Branch
