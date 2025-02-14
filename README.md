@@ -23,6 +23,8 @@ It instantiates SpMM and GEMM on STONNE's flexible accelerator model [MAERI](htt
 
 <img src="omega.png">
 
+Regarding energy, OMEGA reports the global buffer and register file accesses. For energy model, please refer to the paper.
+
 # Resources
 
 ## Publication
